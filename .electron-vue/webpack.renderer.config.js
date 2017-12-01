@@ -64,11 +64,11 @@ let rendererConfig = {
       {
         test: /\.scss$/,
         use: [{
-          loader: "style-loader"
+          loader: 'style-loader'
         }, {
-          loader: "css-loader"
+          loader: 'css-loader'
         }, {
-          loader: "sass-loader"
+          loader: 'sass-loader?data=@import "./src/renderer/globals";'
         }]
       },
       {
@@ -78,8 +78,8 @@ let rendererConfig = {
           options: {
             extractCSS: process.env.NODE_ENV === 'production',
             loaders: {
-              sass: 'vue-style-loader!css-loader!sass-loader?indentedSyntax=1',
-              scss: 'vue-style-loader!css-loader!sass-loader'
+              sass: 'vue-style-loader!css-loader!sass-loader?indentedSyntax=1?data=@import "./src/renderer/globals";',
+              scss: 'vue-style-loader!css-loader!sass-loader?data=@import "./src/renderer/globals";'
             }
           }
         }
