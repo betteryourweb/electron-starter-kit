@@ -15,6 +15,18 @@
   }
 </script>
 
-<style>
+<style lang="scss">
   /* CSS */
+  body {
+    top: 0;
+    left: 0;
+    margin: 0;
+    padding: 0;
+  }
+  #app {
+    width: 100vw;
+    height: 100vh;
+    background: $app-bg;
+  }
+
 </style>
