@@ -45,6 +45,8 @@ export default {
   setPlayer (state, type) {
     console.log({playerType: type})
     state.player = state.players[type]
+  },
+  setTags (state, file) {
+    //
   }
-
 }

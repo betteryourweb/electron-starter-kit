@@ -1,6 +1,7 @@
 import util from '@/lib/utils'
 import _ from 'lodash'
 import path from 'path'
+import ID3 from 'id3-parser'
 
 export default {
   musicFiles (state, files) {
@@ -15,6 +16,8 @@ export default {
           return true
         }
         // return isValid
+      }).map(file => {
+        return ID3.parse(file.fullpath)
       })
       // console.log({isValid})
       if (isValid.toString()) return true
