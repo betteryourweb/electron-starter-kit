@@ -1,0 +1,67 @@
+.NavbarTop {
+  -webkit-user-select: none;
+  -ms-overflow-style: scrollbar;
+  -webkit-app-region:drag;
+  position: fixed;
+  width: 100vw;
+  height: calc(#{$navbarTop-height});
+  background: $navbarTop-bg-color;
+  top: 0;
+  margin: 0;
+  padding: 0;
+  left: 0;
+  color:$navbarTop-font-color;
+  overflow: hidden;
+  z-index: 20;
+  .Top {
+    height: $navbarTopTop-height;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+    display: flex;
+    .title {
+      color: $navbarTop-font-color;
+      padding-left: 10px;
+    }
+    .menuItems {
+      a {
+        -webkit-app-region: no-drag;
+        color: $navbarTop-icon-color;
+        width: $navbarTopTop-height;
+        height: $navbarTopTop-height;
+        text-decoration: none;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        &:hover {
+          color: darken($navbarTop-icon-color, 20%);
+          background-color: lighten($navbarTop-bg-color, 25%);
+        }
+      }
+    }
+  }
+
+}
+.MainLinks {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  .link {
+    a {
+      -webkit-app-region: no-drag;
+      display: flex;
+      width: 200px;
+      height: 200px;
+      color: #efefef;
+      text-decoration: none;
+      justify-content: space-around;
+      align-items: center;
+      background: #000;
+      font-size: 28px;
+      margin: 20px;
+      &:hover {
+        background: #333;
+      }
+    }
+  }
+}

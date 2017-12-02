@@ -1,6 +1,6 @@
 'use strict'
 
-import { app, BrowserWindow } from 'electron'
+import {app, BrowserWindow} from 'electron'
 
 /**
  * Set `__static` path to static files in production
@@ -23,7 +23,12 @@ function createWindow () {
     height: 563,
     useContentSize: true,
     width: 1000,
-    frame: false
+    frame: false,
+    transparent: true,
+    'node-integration': true,
+    webPreferences: {
+      webSecurity: false
+    }
   })
 
   mainWindow.loadURL(winURL)
@@ -56,13 +61,13 @@ app.on('activate', () => {
  */
 
 /*
-import { autoUpdater } from 'electron-updater'
+ import { autoUpdater } from 'electron-updater'
 
-autoUpdater.on('update-downloaded', () => {
-  autoUpdater.quitAndInstall()
-})
+ autoUpdater.on('update-downloaded', () => {
+ autoUpdater.quitAndInstall()
+ })
 
-app.on('ready', () => {
-  if (process.env.NODE_ENV === 'production') autoUpdater.checkForUpdates()
-})
+ app.on('ready', () => {
+ if (process.env.NODE_ENV === 'production') autoUpdater.checkForUpdates()
+ })
  */

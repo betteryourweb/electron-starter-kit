@@ -1,0 +1,15 @@
+/**
+  App Vars
+ */
+$app-bg: #010101;
+$app-font-color: #efefef;
+
+/**
+  Navbar Vars
+ */
+$navbarTop-bg-color: #232323;
+$navbarTop-font-color: #efefef;
+$navbarTop-icon-color: #efefef;
+$navbarTopTop-height: 35px;
+$navbarTopPlayer-height: 70px;
+$navbarTop-height: calc(#{$navbarTopPlayer-height} + #{$navbarTopTop-height});
