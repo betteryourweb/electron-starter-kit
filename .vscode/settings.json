@@ -1,0 +1,5 @@
+{
+  "terminal.integrated.env.linux": {
+    "PATH": "/home/administrator/.platformio/penv/bin:/home/administrator/.opam/system/bin:/home/administrator/bin:/sbin:/usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games:/home/administrator/.composer/vendor/bin:/home/administrator/esp/xtensa-esp32-elf/bin"
+  }
+}

@@ -1,23 +1,24 @@
 .SideBar {
-  flex-basis: 200px;
-  background: #fff;
-  color: #000;
-  padding: 20px;
-  height: 100%;
-  .backBtn {
-    color: #000;
-    font-weight: bolder;
-  }
-  .header {
-    font-weight: bolder;
-    font-size: 20px;
-  }
-  .links {
-    overflow: auto;
-    .link {
-      a {
+    flex-basis: 200px;
+    background: #101010;
+    color: #fefefe;
+    padding: 20px;
+    height: 100%;
+    .backBtn {
         color: #000;
-      }
+        font-weight: bolder;
     }
-  }
+    .header {
+        font-weight: bolder;
+        font-size: 2em;
+    }
+    .links {
+        overflow: auto;
+        .link {
+            a {
+                font-size: 2em;
+                color: #000;
+            }
+        }
+    }
 }

@@ -1,7 +1,6 @@
 <template>
     <div id="Main" class="Main">
         <main-links :links="links"></main-links>
-        {{links}}
     </div>
 </template>
 
@@ -17,15 +16,15 @@
           {
             name: 'Music',
             route: {
-              name: 'Music'
-            }
-          },
-          {
-            name: 'Video',
-            route: {
-              name: 'Video'
+              name: 'MusicLibrary'
             }
           }
+          // {
+          //   name: 'Video',
+          //   route: {
+          //     name: 'Video'
+          //   }
+          // }
         ]
       }
     },

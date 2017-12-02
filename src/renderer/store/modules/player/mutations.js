@@ -55,5 +55,11 @@ export default {
     } else {
       state.playlist = playlist
     }
+  },
+  isPlaying (state) {
+    state.isPlaying = true
+  },
+  notPlaying (state) {
+    state.isPlaying = false
   }
 }

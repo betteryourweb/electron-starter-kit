@@ -3,7 +3,8 @@ const str = 'MusicLibrary'
 let toPath = null
 
 const camelCaseToPath = (str) => {
-  let words = [], word = ''
+  let words = []
+  let word = ''
   _.each(str, char => {
     if (char === char.toUpperCase()) {
       if (word) words.push(word)

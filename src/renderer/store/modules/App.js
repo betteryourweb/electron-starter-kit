@@ -1,5 +1,5 @@
 const state = {
-  title: 'Fraktal Custom Software'
+  title: 'Fraktal Media'
 }
 
 export default {

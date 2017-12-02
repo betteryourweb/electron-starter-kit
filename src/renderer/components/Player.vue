@@ -6,10 +6,10 @@
             <a href="#" @click.prevent="back">
                 <i class="fa fa-backward"></i>
             </a>
-            <a href="#" @click.prevent="play">
+            <a href="#" @click.prevent="play" v-if="!isPlaying">
                 <i class="fa fa-play"></i>
             </a>
-            <a href="#" @click.prevent="pause">
+            <a href="#" @click.prevent="pause" v-if="isPlaying">
                 <i class="fa fa-pause"></i>
             </a>
             <a href="#" @click.prevent="stop">
@@ -71,7 +71,8 @@
           audio: 'Player/getAudio',
           player: 'Player/getPlayer',
           nextTrack: 'Player/nextTrack',
-          prevTrack: 'Player/prevTrack'
+          prevTrack: 'Player/prevTrack',
+          isPlaying: 'Player/isPlaying'
         })
       },
       mounted () {

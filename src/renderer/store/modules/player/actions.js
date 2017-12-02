@@ -8,23 +8,28 @@ export default {
       dirs.push(file)
     })
   },
-  play ({state}) {
+  play ({state, commit}) {
+    commit('isPlaying')
     state.player.play()
   },
-  pause ({state}) {
+  pause ({state, commit}) {
+    commit('notPlaying')
     state.player.pause()
   },
-  stop ({state, dispatch}) {
+  stop ({state, commit, dispatch}) {
+    commit('notPlaying')
     state.player.pause()
     state.player.currentTime = 0
   },
-  forward ({state, dispatch}) {
+  forward ({state, commit, dispatch}) {
+    commit('isPlaying')
     console.log('nextTrack', state.nextTrack)
     dispatch('load', state.nextTrack).then(() => {
       setTimeout(() => dispatch('play'), 10)
     })
   },
-  back ({state, dispatch}) {
+  back ({state, commit, dispatch}) {
+    commit('isPlaying')
     dispatch('load', state.prevTrack).then(() => {
       setTimeout(() => dispatch('play'), 10)
     })

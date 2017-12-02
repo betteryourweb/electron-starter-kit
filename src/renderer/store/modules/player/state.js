@@ -30,6 +30,7 @@ const state = {
   players: {
     audio: '',
     video: ''
-  }
+  },
+  isPlaying: false
 }
 export default state

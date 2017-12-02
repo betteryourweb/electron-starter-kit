@@ -13,5 +13,8 @@ export default {
   },
   prevTrack (state) {
     return state.prevTrack
+  },
+  isPlaying (state) {
+    return state.isPlaying
   }
 }
