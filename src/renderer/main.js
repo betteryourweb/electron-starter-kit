@@ -6,6 +6,10 @@ import router from './router'
 import store from './store'
 import 'font-awesome/scss/font-awesome.scss'
 
+import SideBar from '@/components/SideBar'
+
+Vue.component(SideBar.name, SideBar)
+
 if (!process.env.IS_WEB) Vue.use(require('vue-electron'))
 Vue.http = Vue.prototype.$http = axios
 Vue.config.productionTip = false

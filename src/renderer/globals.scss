@@ -1,13 +1,2 @@
-/**
-  Navbar Vars
- */
-$navbarTop-bg-color: #232323;
-$navbarTop-font-color: #efefef;
-$navbarTop-icon-color: #efefef;
-$navbarTop-height: 35px;
+@import '~@/assets/sass/app.scss'
 
-/**
-  App Vars
- */
-$app-bg: #010101;
-$app-padding-top: $navbarTop-height;

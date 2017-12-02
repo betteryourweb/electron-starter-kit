@@ -1,0 +1,40 @@
+.Player {
+  padding: 0 10px;
+  background: $navbarTop-bg-color;
+  audio {
+    z-index: 10001;
+  }
+  video {
+    z-index: 10001;
+  }
+  .controls {
+    display: flex;
+    a {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: calc(#{$navbarTopPlayer-height});
+      width: calc(#{$navbarTopPlayer-height});
+      color: #fff;
+      text-decoration: none;
+      border: transparent 1px solid;
+      &:hover {
+        border: #666 1px solid;
+        background: rgba(0,0,255, .2)
+      }
+    }
+  }
+}
+
+.PlayerLayer {
+  -webkit-app-region: no-drag;
+  background: $navbarTop-bg-color;
+  height: $navbarTopPlayer-height;
+  position: fixed;
+  top: 35px;
+  left: 0;
+  z-index: 10000;
+  color: #fff;
+  display: flex;
+  align-items: center;
+}
