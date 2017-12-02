@@ -1,6 +1,8 @@
-# betteryourweb-electron-starter
+# fraktal-media
 
-> A starter kit for electron
+> Simple media player written in nodejs. This is an evolving project with an end result of satisfying all my media needs. Edit
+Add topics
+
 
 #### Build Setup
 
