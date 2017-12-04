@@ -1,7 +1,6 @@
 # electron-starter-kit
 A starter kit for electron that includes vue, sqlite (in the works), sass support and a customer title bar
 
-Add topics
 
 
 #### Build Setup
