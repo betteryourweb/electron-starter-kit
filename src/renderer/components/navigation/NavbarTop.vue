@@ -24,20 +24,14 @@
       </div>
 
     </div>
-    <div class="PlayerLayer">
-      <player></player>
-    </div>
   </div>
 </template>
 
 <script>
   import {mapMutations, mapGetters, mapState} from 'vuex'
-  import Player from '@/components/Player'
+  // import Player from '@/components/Player'
 
   export default {
-    components: {
-      Player
-    },
     computed: {
       ...mapState({
         windowTitle: state => state.App.title

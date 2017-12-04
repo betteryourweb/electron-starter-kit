@@ -1,6 +1,6 @@
-# fraktal-media
+# electron-starter-kit
+A starter kit for electron that includes vue, sqlite (in the works), sass support and a customer title bar
 
-> Simple media player written in nodejs. This is an evolving project with an end result of satisfying all my media needs. Edit
 Add topics
 
 

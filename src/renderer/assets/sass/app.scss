@@ -34,7 +34,7 @@ a {
 
 #app {
     width: 100vw;
-    height: -webkit-calc(100vh - #{$navbarTop-height});
+    height: 100vh;
     background: $app-bg;
     color: $app-font-color;
     padding-top: $navbarTop-height;
